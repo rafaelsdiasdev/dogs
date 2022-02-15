@@ -16,11 +16,11 @@ const Loading = () => {
     return () => clearInterval(interval);
   }, []);
 
-  function displayStep(i) {
-    return {
-      display: step === i ? 'block' : 'none',
-    };
-  }
+  // function displayStep(i) {
+  //   return {
+  //     display: step === i ? 'block' : 'none',
+  //   };
+  // }
 
   return (
     <div className={styles.wrapper}>

@@ -10,6 +10,7 @@ import PhotoContent from '../Photo/PhotoContent';
 
 const FeedModal = ({ photo, setModalPhoto }) => {
   const { data, error, loading, request } = useFetch();
+  // eslint-disable-next-line no-unused-vars
   const [hits, setHits] = React.useState(0);
 
   React.useEffect(() => {

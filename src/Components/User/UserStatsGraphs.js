@@ -1,5 +1,5 @@
 import React from 'react';
-import { VictoryPie, VictoryChart, VictoryBar } from 'victory';
+import { VictoryPie } from 'victory';
 import styles from './UserStatsGraphs.module.css';
 
 const UserStatsGraphs = ({ data }) => {

@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from '../Helper/Loading.module.css';
-import CatLoading from '../../Assets/cat-loading.gif';
 
 const Loading = () => {
   // eslint-disable-next-line no-unused-vars
@@ -17,17 +16,16 @@ const Loading = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // function displayStep(i) {
-  //   return {
-  //     display: step === i ? 'block' : 'none',
-  //   };
-  // }
+  function displayStep(i) {
+    return {
+      display: step === i ? 'block' : 'none',
+    };
+  }
 
   return (
     <div className={styles.wrapper}>
       <div className={styles.loading}>
-        <img src={CatLoading} alt="carregando..." />
-        {/* <svg
+        <svg
           width="46"
           height="31"
           viewBox="0 0 46 31"
@@ -104,7 +102,7 @@ const Loading = () => {
               fill="#333"
             />
           </g>
-        </svg> */}
+        </svg>
       </div>
     </div>
   );

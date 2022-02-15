@@ -3,6 +3,7 @@ import styles from '../Helper/Loading.module.css';
 import CatLoading from '../../Assets/cat-loading.gif';
 
 const Loading = () => {
+  // eslint-disable-next-line no-unused-vars
   const [step, setStep] = React.useState(1);
 
   React.useEffect(() => {
